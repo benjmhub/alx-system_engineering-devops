@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Find and delete files ending with ~
+find . -type f -name '*~' -delete
+
