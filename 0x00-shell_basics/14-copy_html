@@ -1,0 +1,8 @@
+#!/bin/bash
+# Define the source and destination directories
+source_dir=$(pwd)
+destination_dir=$(dirname "$(pwd)")
+# Copy HTML files from source to destination
+rsync -u --exclude='*' --include='*.html' "$source_dir"/ "$destination_dir"/
+echo "HTML files copied successfully."
+
